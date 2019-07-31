@@ -4,7 +4,6 @@ import { Subscription } from 'rxjs';
 
 import * as d3 from "d3/index";
 import * as Highcharts from 'highcharts';
-import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-plot',
@@ -24,7 +23,7 @@ export class PlotComponent implements OnInit {
   mapFilter;
 
 
-  constructor(public fs: FilterService, private apis: ApiService) {
+  constructor(public fs: FilterService) {
     this.chartCallback = chart => {
       this.chart = chart;
     };
@@ -32,9 +31,21 @@ export class PlotComponent implements OnInit {
     this.subscription = this.fs
       .currentFulldata
       .subscribe(data => {
-        data = this.groupBy(data);
-        this.data = data.map(d => d.value);
-        this.categories = data.map(d => d.key);
+
+        this.fs.currentMessage.subscribe(filterMap => {
+          if (filterMap.length > 0) {
+            var auxData = this.groupBy(
+              data.filter(d => filterMap.indexOf(d.cod_munic_ibge_2_fam_eq) != -1)
+            );
+          } else {
+            var auxData = this.groupBy(data);
+          }
+
+          this.data = auxData.map(d => d.value);
+          this.categories = auxData.map(d => d.key);
+
+          this.setHighChart()
+        })
 
         this.setHighChart()
       });

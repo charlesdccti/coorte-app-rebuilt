@@ -20,6 +20,7 @@ import { NavComponent } from './nav/nav.component';
 import { SearchFieldComponent } from './search-field/search-field.component';
 import { ControlPanelComponent } from './dashboard/control-panel/control-panel.component';
 import { PlotComponent } from './dashboard/plot/plot.component';
+import { MapComponent } from './dashboard/control-panel/map/map.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PlotComponent } from './dashboard/plot/plot.component';
     NavComponent,
     SearchFieldComponent,
     ControlPanelComponent,
-    PlotComponent
+    PlotComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
