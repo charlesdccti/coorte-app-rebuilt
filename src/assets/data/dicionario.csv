@@ -1,0 +1,905 @@
+variavel;descricao;categorias;tipo;presenca;origem
+cd_beneficio_peti;Tipo de benefício do PETI;"0 - Nulo e Vazio 1 - Rural
+2 - Urbano
+99 - Inconsistência";Byte;;v6
+cd_censo_inep;Código INEP da escola;;String;;v6
+cd_crianca_quem_fica;Se criança entre 0 e 6 anos, com quem fica?;"0 - Nulo
+1 - Pai / Mãe
+2 - Irmão / Irmã 3 - Avô / Avó
+4 - Sozinho
+5 - Creche
+6 - Outro
+99 - Inconsistência";Byte;;v6
+cd_eas_ms;Código EAS / MS, conforme codificação do Ministério da Saúde. Obrigatório apenas para o cadastramento da população indígena. Nesse caso, o campo vem preenchido com o código espefífico da FUNASA;;String;;v6
+cd_estado_civil;Indica o estado civil da pessoa;"0 - Nulo
+1 - Solteiro ( a ) 2 - Casado ( a )
+3 - Divorciado ( a ) 4 - Separado ( a ) 5 - Viúvo ( a )
+99 - Inconsistência";Byte;;v6
+cod_ibge_munic_nasc_pessoa_eq;"Código IBGE para o município de nascimento da pessoa.  (sem o dígito
+verificador)";;Integer;;harmonizada
+cd_ocupacao;CB0 - Código Brasileiro de Ocupação.;;String;;v6
+cd_ocupacao_exercida_peti;Código de ocupação exercida PETI;;Integer;;v6
+cd_ocupacao_exercida_peti;Programa de assistência à saúde que atende o domicílio;"0 - Nulo e Não informado
+1 - PACS - Programa de Agentes Comunitários de Saúde
+2 - PSF - Programa de Saúde da Família
+3 - Similares ao PSF 4 - Outro
+99 - Inconsistência";Byte;;v6
+cd_tipo_domicilio;Tipo de domicílio;"0 - Nulo e Não informado
+1 - Casa
+2 - Apartamento
+3 - Cômodos
+4 - Outro
+99 - Inconsistência";Byte;;v6
+cd_tipo_ocupacao_peti;Código do tipo de ocupação PETI;;Integer;;v6
+cd_tratamento_agua;Tipo de tratamento realizado, com maior frequência, na água consumida no domicílio;"0 - Nulo e Não informado
+1 - Filtração
+2 - Fervura
+3 - Cloração
+4 - Sem tratamento 5 - Outro
+99 - Inconsistência";Byte;;v6
+cod_abaste_agua_domic_fam_eq;Tipo de abastecimento de água que atende o domicílio;"0 - Nulo ou não informado 1 - Rede Pública
+2 - Poço / Nascente 3 - Outro
+99 - Inconsistências";Byte;;harmonizada
+cod_afastado_trab_memb;Pessoa afastada na semana passada;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+cod_agricultura_trab_memb;É atividade extrativista;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+cod_agua_canalizada_fam;Se o domicílio tem água encanada;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+cod_banheiro_domic_fam;Existência de banheiro;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+cod_calcamento_domic_fam;Calçamento;"0 - Nulo
+1 - Total
+2 - Parcial
+3 - Não existe
+99 - Inconsistência";Byte;;v7
+cod_censo_inep_memb;Código INEP da escola da pessoa;;Integer;;v7
+cod_comunidade_quilombola_fam;Código da comunidade quilombola;"Campo de 4 posições no formato
+NNNN";Integer;;v7
+cod_deficiencia_memb_eq;Pessoa tem deficiência;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;harmonizada
+cod_destino_lixo_domic_fam_eq;Destino dado ao lixo do domicílio;"0 - Nulo ou não informado 1 - Coletado
+2 - Queimado / Enterrado 3 - Céu aberto
+4 - Outro
+99 - Inconsistências";Byte;;harmonizada
+cod_errad_trab_escravo_fam;;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+cod_escoa_sanitario_domic_fam_eq;;"0 - Nulo ou não informado 1 - Rede coletora
+2 - Fossa séptica
+3 - Fossa rudimentar 4 - Vala
+5 - Outro
+99 - Inconsistênicas";Byte;;harmonizada
+cod_especie_domic_fam_eq;;"0 - Nulo ou não informado 1 - Particular Permanente 2 - Particular improvisado 3 - Coletivo
+4 - Outro
+99 - Inconsistências";Byte;;harmonizada
+cod_familia_indigena_fam;Família indígena;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+cod_familiar_eq;Código familiar harmonizado;;;;harmonizada
+cod_forma_coleta_fam;Forma de coleta;"0 - Nulo
+1 - Informação migrada como inexistente
+2 - Sem visita Domiciliar 3 - Com visita domiciliar 99 - Inconsistência";Byte;;v7
+cod_ibge_munic_escola_memb;"Código do IBGE do Município da
+escola da pessoa";;Integer;;v7
+cod_iluminacao_domic_fam_eq;;"0 - Nulo ou não informado 1 - Medidor próprio
+2 - Medidor comunitário 3 - Sem medidor
+4 -Lampião
+5 - Vela
+6- Outro
+99 - Inconsistências";Byte;;harmonizada
+cod_indigena_reside_fam;Reside em reserva indígena;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+cod_local_domic_fam_eq;Tipo de localidade;"0 - Nulo e Não informado
+1 - Urbana
+2 - Rural
+99 - Inconsistência";Byte;;harmonizada
+cod_local_nascimento_pessoa_eq;;"0 - Nulo
+1 - Neste município
+2 - Em outro município 3 - Em outro país
+4 - Neste país
+99 - Inconsistências";Byte;;harmonizada
+cod_material_domic_fam_eq;;"0 - Nulo ou não informado 1 - Tijolo / Alvenaria
+2 - Taipa revestida
+3 - Taipa não revestida 4 - Madeira
+5 - Outro
+99 - Inconsistências";Byte;;harmonizada
+cod_material_piso_fam;Material predominante no piso do domicílio;"0 - Nulo
+1 - Terra
+2 - Cimento
+3 - Madeira aproveitada 4 - Madeira aparelhada
+5 - Cerâmica lajota ou pedra 6 - Carpete
+7 - Outro Material 99 - Inconsistência";Byte;;v7
+cod_munic_ibge_fam_eq;"Código de munícipio conforme IBGE
+harmonizado";;Integer;;harmonizada
+cod_pais_origem_pessoa_eq;"Código do país de origem, caso CD_NACIONALIDADE = '2' ou '3'.
+Apresenta 0 para
+CD_NACIONALIDADE = '1' (Brasil)";;Integer;;harmonizada
+cod_parentesco_rf_pessoa_eq;;"0 - Nulo ou não informado 1 - Responsável
+2 - Esposo (a) 3 - Filho (a)
+4 - Enteado (a)
+5 - Neto (a) / Bisneto (a) 6 - Sogro(a)
+7 - Irmão/Irma
+8 - Genro/nora
+9 - Outro parente 10 - Não parente
+99 - Inconsistências";Byte;;harmonizada
+cod_principal_trab_memb_eq;;"0 - Nulo
+1 - Trabalhador por conta própria (bico, autônomo)
+2 - Empregado sem carteira de trabalho assinada
+3 - Empregado com carteira de trabalho assinada
+4 - Trabalhador não remunerado 5 - Militar ou servidor público
+6 - Empregador
+7 - Estagiário
+8 - Aprendiz
+9 - Aposentado/Pensionista 10 - Trabalhador rural
+11 - Não trabalha 12 - Outra
+99 - Inconsistências";Byte;;harmonizada
+cod_prog_prohab_memb;;"0 - Nulo
+1 - Habitação de Interesse Social - HIS-FNHIS
+2 - Urbanização, Regularização e Integração de Assentamentos Precários - UAP-FNHIS
+3 - Habitar Brasil BID - HBB 4 - Pró-Moradia
+5 - Minha Casa Minha Vida - Municípios até 50 mil habitantes 6 - Operações coletivas - FGTS  7 - Minha Casa Minha Vida - FAR 8 - Pró-Municípios
+99 - Inconsistência";Byte;;v7
+cod_prog_prohab_memb_comp;;"0 - Nulo
+1 - Habitação de Interesse Social - HIS-FNHIS
+2 - Urbanização, Regularização e Integração de Assentamentos Precários - UAP-FNHIS
+3 - Habitar Brasil BID - HBB 4 - Pró-Moradia
+5 - Minha Casa Minha Vida - Municípios até 50 mil habitantes 6 - Operações coletivas - FGTS  7 - Minha Casa Minha Vida - FAR 8 - Pró-Municípios
+99 - Inconsistência";Byte;;v7
+cod_raca_cor_pessoa_eq;Indica a raça - cor da pessoa;"0 - Nulo ou não informado 1 - Branca
+2 - Preta
+3 - Amarela
+4 - Parda
+5 - Indígena
+99 - Inconsistências";Byte;;harmonizada
+cod_sabe_ler_escrever_memb_eq;Pessoa sabe ler e escrever;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistências";Byte;;harmonizada
+cod_sexo_pessoa_eq;Indica o sexo da pessoa;"0 - Nulo
+1 - Masculino
+2 - Feminino
+99 - Inconsistência";;;harmonizada
+cod_tempo_cidade_memb;;"0 - Nulo
+1 - Até seis meses
+2 - Entre seis meses e um ano 3 - Entre um e dois anos
+4 - Entre dois e cinco anos 5 - Entre cinco e dez anos 6 - Mais de dez anos
+99 - Inconsistência";Byte;;v7
+cod_tempo_rua_memb;;"0 - Nulo
+1 - Até seis meses
+2 - Entre seis meses e um ano 3 - Entre um e dois anos
+4 - Entre dois e cinco anos 5 - Entre cinco e dez anos 6 - Mais de dez anos
+99 - Inconsistência";Byte;;v7
+cod_trabalho_12_meses_memb;Pessoa com trabalho remunerado 12 meses;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+cod_trabalhou_memb;Pessoa trabalhou na semana passada;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+cod_unidade_territorial_fam;Código da Unidade Territorial Local;campo númérico formato NNN;Long;;v7
+cod_vive_fam_rua_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+dt_entrada_coorte;Data de entrada na coorte;;;;criada
+dt_inclusao_agente_jovem;"Quando for o caso, em que data
+(formato dd-mmm-aaaa hh:mm:ss) a pessoa foi incluída no programa agente jovem";;Date;;v6
+dt_inclusao_peti;Quando for o caso, em que data (formato dd-mmm-aaaa hh:mm:ss) a pessoa foi incluída no programa PETI;;Date;;v6
+dt_inclusao_proger;Quando for o caso, em que data (formato dd-mmm-aaaa hh:mm:ss) foi inc;;Date;;v6
+dt_nasc_pessoa_eq;Data de nascimento da pessoa.;;Date;;harmonizada
+escolaridade_eq;;"0 - Nulo
+1 - Pré-escola
+2 - Alfabetização
+3 - Ensino Fundamental (desde a primeira até a quarta/quinta série) 4 - Ensino Fundamental (desde a quinta série à oitava/nono ano)
+5 - Ensino Médio 6 - Superior
+77 - Nunca frequentou 99 - Inconsistência";Byte;;harmonizada
+id_cidacs_pop100_v2;;;;;criada
+in_amamentando;"Indica se uma pessoa do sexo
+feminino, com idade entre 10 e 60 anos, está em amamentação";"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+in_beneficiario_bal;Indica beneficiário Bolsa Alimentação:;"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+in_beneficiario_bes;Indica beneficiário Bolsa Escola;"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+in_complementado_bes;Indica complementação do Bolsa Escola;"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+in_complementado_bes_fam;Indica complementação do Bolsa Escola;"Vazio - sem informação, ou não é
+o caso S - Sim";Byte;;v6
+in_liberto_trab_escravo;Indica se a pessoa foi libertada de trabalho escravo;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v6
+in_nenhum_programa;Indica a não participação em qualquer programa do governo federal;"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+in_ocupacao_peti;Indica ocupação PETI;"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+in_outra_deficiencia;Indica pessoa cuja deficiência não esteja caracterizada dentre as anteriores;"0 - Nulo e Vazio
+1 - Sim. Apresenta outra deficiência distinta das anteriores 99 - Inconsistência";Byte;;v6
+in_outro_programa;"Indica participação em outro programa
+distinto dos programas anteriormente relacionados";"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+in_participa_agente_jovem;"Indica participação no Programa
+Agente Jovem. Apenas caso afirmativo (IN_PARTICIPA_AGENTE_JOVEM =
+'S') a variável DT_INCLUSAO_AGENTE_JOVEM
+apresentará registro não vazio";"Vazio - sem informação, ou não é
+o caso 0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v6
+in_participa_bolsa_alimentacao;Indica participação no Programa Bolsa Alimentação;"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+in_participa_bolsa_escola;Indica participação no Programa Bolsa Escola;"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+in_participa_juv_cidada;Indica participação no Programa Juventude Cidadã;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v6
+in_participa_loas_bpc;Indica recebimento do Benefício de Prestação Continuada (BPC) da LOAS (Lei Orgânica da Assistêwncia Social);"0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência";Byte;;v6
+in_participa_peti;"Indica participação no PETI - Programa de Erradicação do Trabalho Infantil. Apenas caso afirmativo (IN_PARTICIPA_PETI = 'S') as
+variáveis DT_INCLUSAO_PETI, CD_BENEFICIO_PETI, VL_BENEFICIO_PETI, CD_OCUPACAO_EXERCIDA_PETI, IN_OCUPACAO_PETI e CD_TIPO_OCUPACAO_PETI
+apresentarão campos não vazios";"0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência";Byte;;v6
+in_participa_prev_rural;"""Indica participação na previdência
+rural";"Vazio - sem informação, ou não é
+o caso S - Sim""";;;v6
+in_participa_proger;"Indica participação no Programa de
+Geração de Emprego, Trabalho e Renda - PROGER. Apenas caso afirmativo (IN_PARTICIPA_PROGER
+= 'S') a variável DT_INCLUSAO_PROGER
+apresentará registro não vazio:";"0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência";Byte;;v6
+in_participa_pronaf;"Indica participação no Programa
+Nacional de Fortalecimento da Agricultura Familiar (PRONAF)";"0 - Nulo e Vazio
+1 - Sim
+99 - Inconsistência";Byte;;v6
+ind_ajuda_especializado_memb;Ajuda Terceiros Especializada;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ajuda_familia_memb;Ajuda Terceiros família;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ajuda_instituicao_memb;Ajuda Terceiros instituição;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ajuda_nao_memb;Ajuda Terceiros não recebida;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ajuda_outra_memb;Ajuda Terceiros outra forma;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ajuda_vizinho_memb;Ajuda Terceiros vizinhos;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_atend_centro_ref_rua_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_atend_cras_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_atend_creas_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_atend_hospital_geral_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_atend_inst_gov_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_atend_inst_nao_gov_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_atend_nenhum_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ativ_com_coop_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ativ_com_escola_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ativ_com_mov_soc_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ativ_com_nao_resp_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ativ_com_nao_sabe_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_cadastro_valido_fam;Cadastro válido;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+ind_censo_inep_memb;A escola não tem INEP;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_comunidade_quilombola_fam;Não sabe(comunidade quilombola da família);"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_def_baixa_visao_memb;Deficiência Visão;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_def_cegueira_memb_eq;"Indica pessoa cuja deficiência seja ""cegueira""";"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";;;harmonizada
+ind_def_fisica_memb_eq;"Indica pessoa cuja deficiência seja ""deficiência física""";"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;harmonizada
+ind_def_mental_memb_eq;"Indica pessoa cuja deficiência seja ""deficiência mental""";"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;harmonizada
+ind_def_surdez_memb_eq;"Indica pessoa cuja deficiência seja ""surdez""";"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;harmonizada
+ind_def_transtorno_mental_memb;Deficiência Transtorno mental;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_desp_alimentacao_fam;Não tem despesa com alimentação;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_desp_aluguel_fam;Não tem despesa com aluguel;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_desp_energia_fam;Não tem despesa com energia;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_desp_gas_fam;Não tem despesa com gás;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_desp_medicamentos_fam;Não tem despesa com medicamentos;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_desp_transpor_fam;Não tem despesa com transporte;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dinh_carregador_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dinh_catador_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dinh_const_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dinh_flanelhinha_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dinh_nao_resp_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dinh_outro_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dinh_pede_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dinh_servs_gerais_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dinh_vendas_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dormir_albergue_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dormir_dom_part_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_dormir_rua_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_familia_quilombola_fam;Família quilombola;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+ind_frequenta_escola_memb_eq;;"0 - Nulo
+1 - Sim, rede pública
+2 - Sim, rede particular 3 - Não, já frequentou 4 - Nunca frequentou 5 - Outra
+99 - Inconsistência";Byte;;harmonizada
+ind_pessoa_inter_0_17_anos_fam;Não tem pessoas internadas faixa 0- 17 anos;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_pessoa_inter_18_64_anos_fam;Não tem pessoas internadas faixa 18- 64 anos;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_pessoa_inter_65_anos_fam;Não tem pessoas internadas faixa 65 anos ou mais;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_pmig_cpo_obr_prin_fam;;"0 - Nulo
+1 - Não Existe 2 - Existe
+99 - Inconsistência";Byte;;v7
+ind_pmig_cpo_obr_sup1_fam;;"0 - Nulo
+1 - Não Existe 2 - Existe
+99 - Inconsistência";Byte;;v7
+ind_prog_prohab_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_ptrn_sem_rf_fam;;"0 - Nulo
+1 - Não Existe 2 - Existe
+99 - Inconsistência";Byte;;v7
+ind_reserva_indigena_fam;Não sabe(reserva indígena da família);"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_capit_agua_chuva_prod_alim_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_cisterna_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_feira_pop_mds_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_horta_comum_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_nenhum_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_partic_alim_nutricao_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_proj_cart_indigena_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_receb_alim_paa_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_receb_cesta_basica_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_receb_leite_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_refei_cozinha_comum_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_refei_restau_popular_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_sesan_vende_alim_paa_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_abrigo_crianca_adoles_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_abrigo_mulher_vitima_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_bpc_deficiente_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_bpc_idoso_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_crianca_0_6_anos_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_grupos_idosos_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_nenhum_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_paif_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_peti_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_projovem_adolescente_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_projovem_campo_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_projovem_trabalhador_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_snas_projovem_urbano_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_trabalho_infantil_fam;Trabalho infantil na família;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;v7
+ind_trabalho_infantil_pessoa;;"0 - Nulo
+1 - Opção não marcada no formulário
+2 - Opção marcada no formulário 99 - Inconsistência";Byte;;v7
+ind_val_remuner_emprego_memb;Não recebeu remuneração de trabalho;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_val_renda_doacao_memb;Não recebe doação;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_val_renda_pensao_alimen_memb;Não recebe pensão alimentícia;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+nm_outro_benef_pessoa;Nome de outro benefício da pessoa;;String;;v6
+nom_escola_memb_eq;Nome da Escola;;String;;harmonizada
+nom_estab_assist_saude_fam_eq;;;String;;harmonizada
+nom_munic_escola_memb;"Nome do Município da Escola da
+Pessoa";;String;;v7
+nu_estbo_saude;Código do estabelecimento EAS/MS;;Integer;;v7
+nu_natural_pessoa;;;String;;v6
+nu_pessoa_vivem_renda;"Número de pessoas que vivem das
+rendas cujas variáveis são VL_REMUNERACAO_EMPREGO, VL_RENDA_APOSENTADORIA, VL_RENDA_SEGURO_DESEMPREG O, VL_RENDA_PENSAO_ALIMENTICIA ou VL_OUTRAS_RENDAS";;Integer;;v6
+qt_deficientes;"Quantidade de deficientes calculada
+na tabela de pessoas";;Integer;;v6
+qt_maes_amamentando;"Quantidade de mães amamentando
+calculada na tabela de pessoas";;Integer;;v6
+qt_mulheres_gravidas;"Quantidade de mulheres grávidas
+calculada na tabela de pessoas";;Integer;;v6
+qtd_comodos_domic_fam_eq;"Número de cômodos do domicílio (inclusive banheiro, sala e cozinha,
+desde que separados por paredes)";;Integer;;harmonizada
+qtd_comodos_dormitorio_fam;Quantidade de comodo servindo como dormitório do domicilio;;Integer;;v7
+qtd_dormir_freq_albergue_memb;;"0 - Nulo
+1 - 1 vez
+2 - 2 vezes
+3 - 3 vezes
+4 - 4 vezes
+5 - 5 vezes
+6 - 6 vezes
+7 - 7 vezes
+99 - Inconsistência";Byte;;v7
+qtd_dormir_freq_dom_part_memb;;"0 - Nulo
+1 - 1 vez
+2 - 2 vezes
+3 - 3 vezes
+4 - 4 vezes
+5 - 5 vezes
+6 - 6 vezes
+7 - 7 vezes
+99 - Inconsistência";Byte;;v7
+qtd_dormir_freq_rua_memb;;"0 - Nulo
+1 - 1 vez
+2 - 2 vezes
+3 - 3 vezes
+4 - 4 vezes
+5 - 5 vezes
+6 - 6 vezes
+7 - 7 vezes
+99 - Inconsistência";Byte;;v7
+qtd_familias_domic_fam;Quantidade de famílias no domicílio;;Integer;;v7
+qtd_meses_12_meses_memb;"Quantidade de meses trabalhados nos
+últimos";;Integer;;v7
+situacao_cadastro;;;;;criada
+val_desp_agua_esgoto_fam_eq;Valor da despesa com água;;Integer;;harmonizada
+val_desp_alimentacao_fam_eq;Valor da despesa com alimentação;;Integer;;harmonizada
+val_desp_aluguel_fam_eq;Valor da despesa de aluguel;;Integer;;harmonizada
+val_desp_energia_fam_eq;Valor da despesa com luz;;Integer;;harmonizada
+val_desp_gas_fam_eq;Valor da despesa com gás;;Integer;;harmonizada
+val_desp_medicamentos_fam_eq;Valor da despesa com medicamentos;;Integer;;harmonizada
+val_desp_transpor_fam_eq;Valor da despesa com transporte;;Integer;;harmonizada
+val_outras_rendas_memb_eq;"Valor das outras rendas não incluídas como: Val_remuner_emprego_memb_eq; val_renda_aposent_memb_eq; val_renda_pensao_alimen_memb_eq; val_renda_seguro_desemp_memb_eq
+;";;Integer;;harmonizada
+val_remuner_emprego_memb_eq;Valor da remuneração do emprego;;Integer;;harmonizada
+val_renda_aposent_memb_eq;"Valor da renda de aposentadoria. É considerada renda de transferência
+para o cálculo do IDF";;Integer;;harmonizada
+val_renda_bruta_12_meses_memb;;;Integer;;v7
+val_renda_doacao_memb;"Valor recebido de doação (sem casas
+decimais)";;Integer;;v7
+val_renda_pensao_alimen_memb_eq;"Valor da renda da pensão alimentícia. É considerada renda de transferência
+para o cálculo do IDF";;Integer;;harmonizada
+val_renda_seguro_desemp_memb_eq;Valor da renda do seguro desemprego. É considerada renda de transferência para o cálculo do IDF;;Integer;;harmonizada
+vl_beneficio_peti;Valor do benefício PETI;;Integer;;v6
+vl_despesa_prest_habitacional;"Valor da despesa com prestação
+habiatacional";;Integer;;v6
+vl_outras_despesas;Valor das outras despesas não incluídas como VL_DESPESA_ALUGUEL, VL_DESPESA_PREST_HABITACION AL, VL_DESPESA_ALIMENTACAO, VL_DESPESA_AGUA, VL_DESPESA_LUZ, VL_DESPESA_TRANSPORTE, VL_DESPESA_MEDICAMENTOS ou VL_DESPESA_GAS;;Integer;;v6
+idade_entrada_coorte_dias;Idade (em dias) na entrada da coorte;;Integer;;criada
+idade_entrada_coorte_anos;Idade (em anos) na entrada da coorte;;Integer;;criada
+nis_atual_elos;;;;;criada
+qtd_pessoas_domic_fam_eq;;;Integer;;harmonizada
+rf_mes_gravidez;"Se grávida, mês de gravidez em que
+se encontra a gestante";;Integer;;v6
+in_pessoa_duplicado;Indica se a pessoa está duplicada:;"0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência";Byte;;v6
+dt_admissao_empresa;Data de admissão na empresa;;Date;;v6
+dt_emissao_doc_certidao;"Data de emissão da certidão civil.
+Formato dd-mmm-aaaa hh:mm:ss";;Integer;;v6
+in_deficiencia_mudez;"Indica pessoa cuja deficiência seja ""mudez"":
+Vazio - sem informação, ou não é o caso
+S -Sim. Apresenta deficiência ""mudez""";"0 - Nulo e Vazio 1 - Sim
+99 - Inconsistência";Byte;;v6
+rf_mes_moradia;"Parte não inteira do tempo de moradia
+(em meses)";;Integer;;v6
+cod_ano_serie_frequenta_memb_eq;Ano e série que a pessoa frequenta;"0 - Nulo
+1 - Primeiro(a)
+2 - Segundo(a)
+3 - Terceiro(a)
+4 - Quarto(a)
+5 - Quinto(a)
+6 - Sexto(a)
+7 - Sétimo(a)
+8 - Oitavo(a)
+9 - Nono(a)
+10 - Curso não-seriado 99 - Inconsistência
+88 - Não se aplica";Byte;;harmonizada
+cod_ano_serie_frequentou_memb_eq;Último ano frequentado pela pessoa:;"0 - Nulo
+1 - Primeiro(a)
+2 - Segundo(a)
+3 - Terceiro(a)
+4 - Quarto(a)
+5 - Quinto(a)
+6 - Sexto(a)
+7 - Sétimo(a)
+8 - Oitavo(a)
+9 - Nono(a)
+10 - Curso não-seriado 99 - Inconsistência
+88 - Não se aplica";Byte;;harmonizada
+cod_concluiu_frequentou_memb_eq;A pessoa concluiu o curso:;"0 - Nulo
+1 - Sim
+2 - Não
+99 - Inconsistência";Byte;;harmonizada
+ano_backup;"Ano correspondente ao backup da
+base extraída";;;;criada
+ind_min_energ_tarifa_soc_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_motivo_alcool_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+cod_est_cadastral_fam;Estado cadastral da família;"0 - Nulo
+1 - Em cadastramento 2 - Sem Registro Civil 3 - Cadastro
+4 - Excluído
+99 - Inconsistência";Byte;;v7
+dta_cadastramento_memb;"Data de cadastramento da Pessoa no
+CadÚnico:
+Formato DDMMAAAA";"Data de cadastramento da
+Pessoa no CadÚnico: Formato DDMMAAAA";Date;;v7
+flag_fam_alterada_v7;;"Marcação do tipo de alteração dos dados da família:
+0 - Nulo
+1 - Família não atualizada na V7 2 - Família atualizada na V7
+3 - Família oriunda da V7 99 - Inconsistência";Byte;;v7
+ind_motivo_desemprego_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_motivo_nao_resp_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_min_energ_elet_doacao_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_formulario_sup1_fam;;"Formulário Suplementar 1:
+0 - Nulo
+1 - Não
+2 - Sim
+99 - Inconsistência";Byte;;v7
+cod_origem_familia_pessoa;;;Long;;v7
+ind_def_sindrome_down_memb;Deficiência Down;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+cod_condicao_cadastro_fam;Código de condição do cadastro da fam;"0 - Nulo
+1 - Atualizado
+2 - Desatualizado
+99 - Inconsistência";Byte;;v7
+qtd_pessoa_inter_0_17_anos_fam;"Quantidade de pessoas internadas
+faixa 0-17 anos";"Quantidade de pessoas
+internadas faixa 0-17 anos";Integer;;v7
+ind_min_energ_nenhum_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+cod_est_cadastral_memb;Estado cadastral da pessoa;"Estado cadastral da pessoa:
+0 - Nulo
+1 - Em Cadastramento 2 - Sem Registro Civil 3 - Cadastrado
+4 - Excluído
+5 - Aguardando NIS 6 - Validando NIS 99 - Inconsistência";Byte;;v7
+nom_origem_alteracao_pessoa;"Descreve a Origem da ALTERACAO (CADÚNICO DATASUS PIS ONLINE...) *
+(somente para a base MDS diária)";"Descreve a Origem da ALTERACAO
+(CADÚNICO DATASUS PIS ONLINE...) *
+(somente para a base MDS diária)";String;;v7
+qtd_pessoa_inter_18_64_anos_fam;"Quantidade de pessoas internadas
+faixa 18-64 anos";;Integer;;v7
+ind_otrn_outra_fam;;"0 - Nulo
+1 - Não Existe 2 - Existe
+99 - Inconsistência";Byte;;v7
+vlr_renda_media_fam;;;Integer;;v7
+sig_orgao_emissor_pessoa;Órgão Emissor da CI da Pessoa;Órgão Emissor da CI da Pessoa;String;;v7
+qtd_pessoa_inter_65_anos_fam;Quantidade de pessoas internadas faixa 65 anos ou mais;Quantidade de pessoas internadas faixa 65 anos ou mais;Integer;;v7
+cod_munic_ibge_2_fam;;;Integer;;v7
+ind_formulario_2_fam;Formulário Avulso 2;"0 - Nulo
+1 - Não
+2 - Sim
+99 - Inconsistência";Byte;;v7
+ind_pais_origem_pessoa;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_motivo_saude_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_motivo_ameaca_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_formulario_1_fam;Formulário Avulso 1;"0 - Nulo
+1 - Não
+2 - Sim
+99 - Inconsistência";Byte;;v7
+ind_motivo_trabalho_memb;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_min_energ_luz_fam;;"0 - Nulo
+1 - Opção não marcada 2 - Opção marcada
+99 - Inconsistência";Byte;;v7
+ind_formulario_sup2_fam;Formulário Suplementar 2;"0 - Nulo
+1 - Não
+2 - Sim
+99 - Inconsistência";Byte;;v7
+nom_pais_origem_pessoa;Nome do país de nascimento da Pesso;Nome do país de nascimento da P;String;;v7
+qtd_freq_outro_memb;Quantidade de vezes por semana que;"0 - Nulo
+1 - 1 vez
+2 - 2 vezes
+3 - 3 vezes
+4 - 4 vezes
+5 - 5 vezes
+6 - 6 vezes
+7 - 7 vezes
+99 - Inconsistência";Byte;;v7
+cod_contato_parente_memb;;"0 - Nulo
+1 - Todo dia
+2 - Toda semana 3 - Todo mês
+4 - Todo ano
+5 - Quase nunca 6 - Nunca
+99 - Inconsistência";Byte;;v7
+dt_inicio_recebimento_bf;Data de início de recebimento do BF;;Date;2004-2015;BF
+dt_fim_recebimento_bf;Data final de recebimento do BF;;Date;2004-2015;BF
+tempo_recebimento_dias_bf;"Tempo de recebimento (em dias) do
+BF";;Integer;2004-2015;BF
+id_cidacs_sinasc;Identificador único por indivíduo;;;;
+horanasc;hora do nascimento;;string;2011-2015;SINASC
+peso;Peso ao nascer em gramas.;;Integer;2001-2015;SINASC
+apgar1;Apgar no 1o minuto;;String;;SINASC
+apgar5;Apgar no 5o minuto;;String;;SINASC
+idanomal;Anomalia identificada;"0 - Nulo
+1 - Sim
+2 - Não
+88 - Ignorado
+99 - Inconsistência";Byte;2001-2015;SINASC
+codanomal;Código da anomalia (CID 10);;Integer;2001-2015;SINASC
+locnasc;Local de nascimento;"0 - Nulo
+1 - Hospital
+2 - Outros estabelecimentos de saúde 3 - Domicílio
+4 - Outros
+99 - Inconsistência";Integer;2011-2015;SINASC
+estcivmae;Situação conjugal da mãe;"0 - Nulo
+1 - Solteira
+2 - Casada
+3 - Viúva
+4 - Separada judicialmente/divorciada 5 - União estável
+88 - Ignorada
+99 - Inconsistência";Byte;2001-2015;SINASC
+;;;;;
+qtdfilvivo;Número de filhos vivos;;Integer;2001-2015;SINASC
+qtdfilmort;Número de perdas fetais e abortos;;Integer;2001-2015;SINASC
+gestacao;Semanas de gestação;"0 - Nulo
+1 - Menos de 22 semanas
+2 - 22 a 27 semanas
+3 - 28 a 31 semanas
+4 - 32 a 36 semanas
+5 - 37 a 41 semanas
+6 - 42 semanas e mais
+88 - Ignorado
+99 - Inconsistência";Byte;2001-2015;SINASC
+gravidez;Tipo de gravidez;"0 - Nulo
+1 - Única
+2 - Dupla
+3 - Tripla ou mais 88 - Ignorado
+99 - Inconsistência";Byte;2001-2015;SINASC
+parto;Tipo de parto;"0 - Nulo
+1 - Vaginal;
+2 - Cesário;
+88 - Ignorado
+99 - Inconsistência";Byte;2001-2015;SINASC
+consultas;Número de consultas de pré?natal.;"0 - Nulo
+1 - Nenhuma
+2 - de 1 a 3
+3 - de 4 a 6
+4 - 7 e mais
+88 - Ignorado
+99 - Inconsistência";Byte;2001-2015;SINASC
+qtdgestant;Número de gestações anteriores;;Integer;2011-2015;SINASC
+qtdpartnor;Número de partos vaginais;;Integer;2011-2015;SINASC
+qtdpartces;Número de partos cesáreos;;Integer;2011-2015;SINASC
+dtultmenst;Data da última menstruação (DUM);dd mm aaaa;date;2011-2015;SINASC
+semagestac;Número de semanas de gestação.;;;2011-2015;SINASC
+tpmetestim;Método utilizado.;"0 - Nulo
+1 - Exame físico  2 - Outro método 88 - Ignorado
+99 - Inconsistência";Byte;2011-2015;SINASC
+consprenat;Número de consultas pré?natal;;Integer;2011-2015;SINASC
+mesprenat;Mês de gestação em que iniciou o pré?natal;;Integer;2011-2015;SINASC
+tpapresent;Tipo de apresentação do RN.;"0 - Nulo;
+1 - Cefálico;
+2 -Pélvica ou podálica; 3 - Transversa;
+88 - Ignorado;
+99 - Inconsistência.";Byte;2011-2015;SINASC
+sttrabpart;Trabalho de parto induzido?;"0 - Nulo
+1 - Sim
+2 - Não
+3 - Não se aplica 88 - Ignorado
+99 - Inconsistência";Byte;2011-2015;SINASC
+stcesparto;Cesárea ocorreu antes do trabalho de parto iniciar?;"0 - Nulo
+1 - Sim
+2 - Não
+3 - Não se aplica 88 - Ignorado
+99 - Inconsistência.";Byte;2011-2015;SINASC
+tpnascassi;Nascimento foi assistido por?;"0 - Nulo
+1 - Médico
+2 - Enfermeira/obstetriz
+3 - Parteira
+4 - Outros
+88 - Ignorado
+99 - Inconsistência.";Byte;2011-2015;SINASC
+ç;;"1 - Fetal; 2 - Não Fetal 99 - Inconsistência";;;
+dtobito;Data do óbito;;Date;Todos os anos;SIM
+horaobito;Horário do óbito;;String;Todos os anos;SIM
+natural;Naturalidade;;Integer;A partir de 2013;SIM
+codmunnatu;Código do município de naturalidade do falecido;;Integer;;SIM
+uni_dade;Unidade da idade;0 - Idade menor de 1 hora 1 - Hora 2 - Dias 3 - Meses 4 - Anos 5 - Mais de 100 anos;Byte;Todos os anos;SIM
+idade;Valor da idade;01 a 59 - para unidade 0 01 a 23 - para unidade 1 01 a 29 - para unidade 2 01 a 11 - para unidade 3 01 a 99 - para unidade 4 00 a 99 - para unidade 5;Byte;Todos os anos;SIM
+lococor;Local de ocorrência do óbito;0 - Nulo 1 - Hospital 5 - Outros 88 - Ignorado 99 - Inconsistência;Byte;Todos os anos;SIM
+idademae;Idade da mãe;;Integer;Todos os anos;SIM
+escmae;Escolaridade em anos;"0 - Nulo
+1 - Nenhuma
+2 - de 1 a 3 anos
+3 - de 4 a 7 anos
+4 - de 8 a 11 anos
+5 - 12 anos ou mais
+9 - Ignorado
+99 - Inconsistência";;;SIM
+ocupmae;Ocupação da mãe;;Integer;Todos os anos;SIM
+qtdfilvivo;Número de filhos vivos;;Byte;Todos os anos;SIM
+qtdfilmort;Número de filhos mortos;;Byte;Todos os anos;SIM
+semanagestac;;1 - Menos 22 semanas 2 - 22 a 27 semanas 3 - 28 a 31 semanas 4 - 32 a 36 semanas 5 - 37 a 41 semanas 6 - 42 e + semanas 88 - Ignorado 99 - Inconsistência;;;
+gravidez;Informar o tipo de gravidez;01 a 59 - para unidade 0 01 a 23 - para unidade 1 01 a 29 - para unidade 2 01 a 11 - para unidade 3 01 a 99 - para unidade 4 00 a 99 - para unidade 5;Byte;Todos os anos;SIM
+parto;Informar o tipo de parto;0 - Nulo 1 - Vaginal 2 - Cesáreo 88 - Ignorado 99 - Inconsistência;Byte;Todos os anos;SIM
+obitoparto;Informar como foi a morte em relação ao parto:;0 - Nulo 1 - Antes 2 - Durante 3 - Depois 88 - Ignorado 99 - Inconsistência;Byte;Todos os anos;SIM
+obitograv;Óbito da gravidez;0 - Nulo 1 - Sim 2 - Não 88 - Ignorado 99 - Inconsistência;Byte;;SIM
+obitopuerp;Óbito no puerpério;0 - Nulo 1 - Sim, até 42 dias após o parto 2 - Sim, de 43 dias a 1 ano 3 - Não 88 - Ignorado 99 - Inconsistência;Byte;;SIM
+peso;Peso ao nascer em gramas;;Integer;Todos os anos;SIM
+tpmorteoco;Quando a morte ocorreu;0 - Nulo 1 - Na gravidez 2 - No parto 3 - No aborto 4 - Até 42 dias após o parto 5 - De 45 dias a 1 ano 8 - Não ocorreu nesse período 88 - Ignorado 99 - Inconsistência;Byte;A partir de 2012;SIM
+morteparto;Momento do obito em relação ao parto;0 - Nulo 1 - Antes 2 - Durante 3 - Após 88 - Ignorado 99 - Inconsistência;;A partir de 2013;SIM
+tpobitocor;O obito ocorreu;"0 - Nulo 1 - Durante a gestacao 2 - Durante abortamento 3 - Após abortamento 4 - No parto ou até 1 hora após o parto 5 - No puerpério (até 42 dias do termino da gestacao) 6 - Entre o 43º dia e até um ano após o
+termino da gestacao 7 - Investigação não identificou o
+momento do obito 8 - Mais de 1 ano após o parto 9 - O obito não ocorreu em nenhuma das circunstancias acima mencionadas 99 - Inconsistência";Byte;A partir de 2013;SIM
+assistmed;Assistência Médica;0 - Nulo 1 - Sim 2 - Não 88 - Ignorado 99 - Inconsistência;Byte;Todos os anos;SIM
+necropsia;Confirmação do diagnostico por necropsia;0 - Nulo 1 - Sim 2 - Não 88 - Ignorado 99 - Inconsistência;Byte;A partir de 2013;SIM
+causamat;Causa externa associada a uma causa materna;;Integer;A partir de 2013;SIM
+causabas_r;Causa básica resselecionada;;String;A partir de 2013;SIM
+cb_pre;Causa básica informada antes da resselecao;;String;A partir de 2013;SIM
+linhaa;CIDs informados na linha A da DO;;String;Todos os anos;SIM
+linhab;CIDs informados na linha B da DO;;String;Todos os anos;SIM
+linhac;CIDs informados na linha C da DO;;String;Todos os anos;SIM
+linhad;CIDs informados na linha D da DO;;String;Todos os anos;SIM
+linhaii;CIDs informados na linha II da DO;;String;Todos os anos;SIM
+causabas;Causa básica da DO;;String;Todos os anos;SIM
+linhaa_o;CIDs informados, originalmente, na Linha A da DO.;;String;A partir de 2013;SIM
+linhab_o;CIDs informados, originalmente, na Linha B da DO.;;String;A partir de 2013;SIM
+linhac_o;CIDs informados, originalmente, na Linha C da DO.;;String;A partir de 2013;SIM
+linhad_o;CIDs informados, originalmente, na Linha D da DO.;;String;A partir de 2013;SIM
+linhaii_o;CIDs informados, originalmente, na Parte II da DO.;;String;A partir de 2013;SIM
+causabas_o;Causa básica da DO;;;A partir de 2013;SIM
+circobito;Indicar provável circunstancia da morte não natural;0 - Nulo 1 - Acidente 2 - Suicídio 3 - Homicídio 4 - Outros 88 - Ignorado 99 - Inconsistência;Byte;Todos os anos;SIM
+acidtrab;Indicar se foi acidente de trabalho;0 - Nulo 1 - Sim 2 - Não 88 - Ignorado 99 - Inconsistência;Byte;A partir de 2013;SIM
+fonte;Indicar a fonte da informação;0 - Nulo 1 - Boletim de ocorrência 2 - Hospital 3 - Família 4 - Outra 88 - Ignorada 99 - Inconsistência;Byte;A partir de 2013;SIM

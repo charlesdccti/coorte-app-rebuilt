@@ -1,0 +1,30 @@
+.flex {
+    display: flex !important;
+    flex-wrap: wrap;
+    padding: 0px 12px;
+    margin: 0 auto;
+    max-width: 2560px !important;
+    width: 90% !important;
+}
+
+.justify {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.search-row, #searchfield-b{
+    margin-bottom: 0px;
+}
+
+.graph-panel{
+    min-height: 60vh !important;
+}
+
+.text-dashboard{
+    margin-bottom: 0px !important;
+}
+
+.timeline{
+    align-content: center !important;
+    margin-right: 0em !important;
+}

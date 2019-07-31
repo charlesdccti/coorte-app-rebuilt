@@ -1,0 +1,14 @@
+codigo	descricao	cor_atual	cor_nova
+1	bot‰es	#1598F8	
+2	borda do navbar	gradiente do cidacs	
+3	textos	preto	
+4	textos do navbar	#b31f18	
+5	indicador de filtro	#1598F8	
+6	cor do slider	#e82b8c	
+7	indicador de aba	#1598F8	
+8	°cones de informaá∆o	preto	
+9	estado selecionado	#ff7f00	
+10	estado n∆o selecionado	#cecece	
+			
+			
+			
