@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FilterService } from "../../services/filter.service";
 import { Subscription } from 'rxjs';
 
+import * as d3 from "d3/index";
 import * as Highcharts from 'highcharts';
 import { ApiService } from '../../services/api.service';
 
@@ -31,9 +32,9 @@ export class PlotComponent implements OnInit {
     this.subscription = this.fs
       .currentFulldata
       .subscribe(data => {
-        data = data.filter(d => d.cod_munic_ibge_2_fam_eq == "11" && d.ano_atual_familia == 2010)
-        this.data = data.map(d => d.n);
-        this.categories = data.map(d => d.nivel);
+        data = this.groupBy(data);
+        this.data = data.map(d => d.value);
+        this.categories = data.map(d => d.key);
 
         this.setHighChart()
       });
@@ -41,6 +42,15 @@ export class PlotComponent implements OnInit {
 
   ngOnInit() {
     this.setHighChart();
+  }
+
+  groupBy(data) {
+    const map = d3.nest()
+      .key(d => d.nivel)
+      .rollup(v => d3.sum(v, d => d.n))
+      .entries(data);
+
+    return map
   }
 
   setHighChart() {
