@@ -8,6 +8,10 @@
                 </mat-panel-title>
             </mat-expansion-panel-header>
             Funcionando content slider
+            <ion-range class="slider1" ref="range" dualKnobs="true" dualKnobs min="2002" max="2015" [(ngModel)]="rangeObject" pin="true" step="1" color="dark" >
+                <ion-label range-left>2002</ion-label>
+                <ion-label range-right>2015</ion-label>
+            </ion-range>
             <label>Filtrar por ano de entrada</label>
         </mat-expansion-panel>
 
