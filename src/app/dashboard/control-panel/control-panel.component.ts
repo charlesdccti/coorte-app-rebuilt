@@ -20,9 +20,14 @@ export class ControlPanelComponent implements OnInit {
 
   ngOnInit() {
     this.fs.currentVar.subscribe(value => this.valueSelected = value);
+    
     console.log(this.rangeObject.lower);
+    
   }
 
-  
+  public updateSlider() {
+    this.fs.sliderRangeChanged(this.rangeObject);
+  }
+
 
 }
