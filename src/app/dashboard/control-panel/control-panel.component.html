@@ -10,7 +10,8 @@
           Funcionando content slider
           <ion-input [(ngModel)]="rangeObject.lower"></ion-input>
           <ion-input [(ngModel)]="rangeObject.upper"></ion-input>
-          <ion-range class="slider1" ref="range" dualKnobs="true" min="2002" max="2015" [(ngModel)]="rangeObject" pin="true" step="1" color="primary" >
+        
+          <ion-range class="slider1" ref="range" dualKnobs="true" min="2002" max="2015" (ionChange)="updateSlider()" [(ngModel)]="rangeObject" pin="true" step="1" color="primary" >
           </ion-range>
           <label>Filtrar por ano de entrada</label>
       </mat-expansion-panel>

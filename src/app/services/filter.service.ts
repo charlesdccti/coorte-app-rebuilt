@@ -1,6 +1,11 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
+export default class Slider {
+  lower: Number;
+  upper: Number;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -30,7 +35,7 @@ export class FilterService {
     this.varSelected.next(value);
   }
 
-  updateSliderRange(range: Number[]){
+  sliderRangeChanged(range: Slider){
     this.sliderRange.next(range);
   }
 

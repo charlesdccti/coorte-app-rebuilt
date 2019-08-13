@@ -24,6 +24,9 @@ export class PlotComponent implements OnInit {
 
 
   constructor(public fs: FilterService) {
+
+    this.fs.currentPosition.subscribe(value => console.log(value));
+
     this.chartCallback = chart => {
       this.chart = chart;
     };
