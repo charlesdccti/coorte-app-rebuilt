@@ -1,0 +1,91 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body, html {
+    height: 100%;
+    margin: 0 auto;  
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 15px;
+
+    /* Location of the image */
+    background-image: url("../src/assets/Images/Background.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    padding: 2em;
+}
+
+.input-field {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    border-radius: 4px !important;
+    height: 45px !important;
+}
+
+.input-field input{
+    border-bottom-color: rgba(0, 0, 0, 0.001);
+    padding-left: 35px !important;
+    width: calc(100% - 35px) !important;
+}
+
+.rounded{
+    border-radius: 4px !important;
+}
+
+.input-field  > i{
+    height: 100% !important;
+    top: 0 !important;
+    padding: 7px 10px !important
+}
+
+.input-field   > .searchfield {
+    margin-bottom: 0 !important;
+    border-bottom: none!important;
+    height: 100% !important;
+}
+
+.padding-zero{
+    padding: 0 !important;
+}
+
+.margin-top-0{
+    margin-top: 0 !important;
+}

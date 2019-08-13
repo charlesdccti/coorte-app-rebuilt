@@ -1,57 +1,57 @@
 <!-- Control Panel-->
 <div class="row">
-    <mat-accordion>
-        <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    Análise por ano de entrada
-                </mat-panel-title>
-            </mat-expansion-panel-header>
-            Funcionando content slider
-            <ion-range class="slider1" ref="range" dualKnobs="true" dualKnobs min="2002" max="2015" [(ngModel)]="rangeObject" pin="true" step="1" color="dark" >
-                <ion-label range-left>2002</ion-label>
-                <ion-label range-right>2015</ion-label>
-            </ion-range>
-            <label>Filtrar por ano de entrada</label>
-        </mat-expansion-panel>
+  <mat-accordion>
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+                  Análise por ano de entrada
+              </mat-panel-title>
+          </mat-expansion-panel-header>
+          Funcionando content slider
+          <ion-input [(ngModel)]="rangeObject.lower"></ion-input>
+          <ion-input [(ngModel)]="rangeObject.upper"></ion-input>
+          <ion-range class="slider1" ref="range" dualKnobs="true" min="2002" max="2015" [(ngModel)]="rangeObject" pin="true" step="1" color="primary" >
+          </ion-range>
+          <label>Filtrar por ano de entrada</label>
+      </mat-expansion-panel>
 
-        <mat-expansion-panel>
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    Análise por estado de residência
-                </mat-panel-title>
-            </mat-expansion-panel-header>
-             <app-map></app-map>
-        </mat-expansion-panel>
-    </mat-accordion>
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+                  Análise por estado de residência
+              </mat-panel-title>
+          </mat-expansion-panel-header>
+           <app-map></app-map>
+      </mat-expansion-panel>
+  </mat-accordion>
 </div>
 
 <div class="row">
-    <div class="card rounded">
-        <div class="card-content">
-            <span class="card-title">{{valueSelected.descricao}}</span>
-            <div class="row">
-                <p>
-                    Valor da renda da pensão alimentícia. É considerada renda de transferência para o cálculo do IDF
-                </p>
-            </div>
+  <div class="card rounded">
+      <div class="card-content">
+          <span class="card-title">{{valueSelected.descricao}}</span>
+          <div class="row">
+              <p>
+                  Valor da renda da pensão alimentícia. É considerada renda de transferência para o cálculo do IDF
+              </p>
+          </div>
 
-            <div class="row desc">
-                <ul>
-                    <li>
-                        <i class="material-icons">
-                            description
-                        </i>
-                        <span>SIM</span>
-                    </li>
-                    <li>
-                        <i class="material-icons">
-                            date_range
-                        </i>
-                        <span>2001 a 2015</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+          <div class="row desc">
+              <ul>
+                  <li>
+                      <i class="material-icons">
+                          description
+                      </i>
+                      <span>SIM</span>
+                  </li>
+                  <li>
+                      <i class="material-icons">
+                          date_range
+                      </i>
+                      <span>2001 a 2015</span>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
 </div>

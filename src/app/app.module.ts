@@ -1,6 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouteReuseStrategy } from '@angular/router';
+
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 import {HttpClientModule} from '@angular/common/http';
 
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -10,8 +22,7 @@ import 'materialize-css';
 import {MaterializeModule} from 'angular2-materialize';
 import { HighchartsChartModule } from 'highcharts-angular';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -21,6 +32,7 @@ import { SearchFieldComponent } from './search-field/search-field.component';
 import { ControlPanelComponent } from './dashboard/control-panel/control-panel.component';
 import { PlotComponent } from './dashboard/plot/plot.component';
 import { MapComponent } from './dashboard/control-panel/map/map.component';
+
 
 @NgModule({
   declarations: [
@@ -35,8 +47,10 @@ import { MapComponent } from './dashboard/control-panel/map/map.component';
     PlotComponent,
     MapComponent
   ],
+  entryComponents: [],
   imports: [
-    BrowserModule,
+    BrowserModule, 
+    IonicModule.forRoot(),
     AppRoutingModule,
     MaterializeModule,
     DemoMaterialModule,
@@ -45,8 +59,12 @@ import { MapComponent } from './dashboard/control-panel/map/map.component';
     FormsModule,
     ReactiveFormsModule,
     HighchartsChartModule
+    ],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

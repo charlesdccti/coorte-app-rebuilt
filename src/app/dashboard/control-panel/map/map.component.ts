@@ -1,6 +1,6 @@
 import { Component, ElementRef, AfterViewInit, ViewChild, ViewEncapsulation, Output, EventEmitter} from '@angular/core';
 import * as d3 from "d3/index";
-import geojson from '../../../../../src/assets/estados_geojson.json';
+import geojson from '../../../../assets/estados_geojson.json';
 import {FilterService} from '../../../services/filter.service';
 
 @Component({
