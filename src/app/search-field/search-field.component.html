@@ -1,12 +1,12 @@
 <form>
-        <div class="row" id="searchfield-a">
-            <div class="input-field card">
-            <input type="text" placeholder="Selecione uma variavel" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto" >
-              <mat-autocomplete #auto="matAutocomplete" >
-                <mat-option *ngFor="let option of filteredOptions | async" [value]="option.descricao" (click)="varSelect(option) ">
-                  {{option.descricao}}
-                </mat-option>
-              </mat-autocomplete>
-            </div>
-        </div>
+  <div class="row" id="searchfield-a">
+      <div class="input-field card">
+      <input type="text" placeholder="Selecione uma variavel" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto" >
+        <mat-autocomplete #auto="matAutocomplete" >
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option.descricao" (click)="varSelect(option) ">
+            {{option.descricao}}
+          </mat-option>
+        </mat-autocomplete>
+      </div>
+  </div>
 </form>

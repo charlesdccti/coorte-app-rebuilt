@@ -6,7 +6,7 @@ import data from '../../assets/data/ratio_state.json';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
   geojson_data;
@@ -43,9 +43,9 @@ export class ContactComponent implements OnInit {
 
     // method that we will use to update the control based on feature properties passed
     this.info.update = function (props) {
-      this._div.innerHTML = (props ? '<b>' + props.feature.id + '</b> <br />' + 
+      this._div.innerHTML = (props ? '<b>' + props.feature.id + '</b> <br />' +
         '<b>Número de pessoas: </b>: ' + props.feature.n_bas +
-        ' people / mi<sup>2</sup> <br/>' 
+        ' people / mi<sup>2</sup> <br/>'
         : '<h6>Passe o mouse sobre um estado</h6>');
     };
 
@@ -81,7 +81,7 @@ export class ContactComponent implements OnInit {
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
       layer.bringToFront();
     }
-    
+
     this.info.update(layer);
   }
 

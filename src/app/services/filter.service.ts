@@ -15,6 +15,9 @@ export class FilterService {
   private varSelected = new BehaviorSubject(null);
   currentVar = this.varSelected.asObservable();
 
+  private sliderRange = new BehaviorSubject(null);
+  currentPosition = this.sliderRange.asObservable();
+
   updateFilterMap(message: string[]){
     this.messageSource.next(message);
   }
@@ -25,6 +28,10 @@ export class FilterService {
 
   updateVarSelected(value){
     this.varSelected.next(value);
+  }
+
+  updateSliderRange(range: Number[]){
+    this.sliderRange.next(range);
   }
 
   constructor() { }
