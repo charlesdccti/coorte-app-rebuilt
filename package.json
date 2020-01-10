@@ -28,6 +28,7 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.7.1",
     "angular2-materialize": "^15.1.10",
+    "bootstrap": "^4.4.1",
     "core-js": "^2.5.4",
     "d3": "^5.9.7",
     "highcharts": "^7.1.2",
