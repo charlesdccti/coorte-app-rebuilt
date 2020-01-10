@@ -1,3 +1,4 @@
+import { FormContactComponent } from './shared/form-contact/form-contact.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -32,6 +33,7 @@ import { SearchFieldComponent } from './search-field/search-field.component';
 import { ControlPanelComponent } from './dashboard/control-panel/control-panel.component';
 import { PlotComponent } from './dashboard/plot/plot.component';
 import { MapComponent } from './dashboard/control-panel/map/map.component';
+import { CreateContactComponent } from './pages/create-contact/create-contact.component';
 
 
 @NgModule({
@@ -45,11 +47,13 @@ import { MapComponent } from './dashboard/control-panel/map/map.component';
     SearchFieldComponent,
     ControlPanelComponent,
     PlotComponent,
-    MapComponent
+    MapComponent,
+    CreateContactComponent,
+    FormContactComponent
   ],
   entryComponents: [],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     MaterializeModule,
@@ -59,7 +63,7 @@ import { MapComponent } from './dashboard/control-panel/map/map.component';
     FormsModule,
     ReactiveFormsModule,
     HighchartsChartModule
-    ],
+  ],
   providers: [
     StatusBar,
     SplashScreen,

@@ -1,0 +1,43 @@
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+
+  <div class="row margin-top left-align">
+    <h1>Infomações para Contato:</h1>
+  </div>
+
+  <div class="row">
+    <div class="form-group">
+      <label for="name"><h5>Nome:</h5></label>
+      <input class="form-control" id="name" name="name" #name="ngModel" [(ngModel)]="contact.name"
+        [class.is-invalid]="!name.valid && name.touched" type="texto" style="width: 60%;" required>
+      <div *ngIf="!name.valid && name.touched" class="text-danger">
+        Digite o nome.
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="form-group">
+    <label for="email"><h5>Email:</h5></label>
+    <input class="form-control" id="email" name="email" #email="ngModel" [(ngModel)]="contact.email"
+      [class.is-invalid]="!email.valid && email.touched" type="texto" style="width: 60%;" required>
+    <div *ngIf="!email.valid && email.touched" class="text-danger">
+      Digite o email.
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group">
+    <label for="phone"> <h5>Telefone:</h5> </label>
+    <input class="form-control" id="phone" name="phone" #phone="ngModel" [(ngModel)]="contact.phone"
+      [class.is-invalid]="!phone.valid && phone.touched" type="texto"  required>
+    <div *ngIf="!phone.valid && phone.touched" class="text-danger">
+      Digite o telefone.
+    </div>
+  </div>
+</div>
+
+<div class="row margin-top">
+  <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Confirmar</button>
+</div>
+</form>

@@ -1,0 +1,22 @@
+<!-- <div class="container mt-3">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="card topform">
+        <div class="card-header">
+          Create Contact
+        </div>
+        <div class="card-body">
+          <app-form-contact (outputcontact)="addContact($event)"></app-form-contact>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="content row valign-wrapper card-panel ion-margin ">
+  <div class="container ">
+    <div class="row">
+      <app-form-contact (outputcontact)="addContact($event)"></app-form-contact>
+    </div>
+  </div>
+</div>
