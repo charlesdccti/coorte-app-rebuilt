@@ -1,3 +1,6 @@
+import { ListContactComponent } from './pages/list-contact/list-contact.component';
+import { FullContactComponent } from './pages/full-contact/full-contact.component';
+import { PainelSimplesComponent } from './painel-simples/painel-simples.component';
 import { FormContactComponent } from './shared/form-contact/form-contact.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -49,7 +52,10 @@ import { CreateContactComponent } from './pages/create-contact/create-contact.co
     PlotComponent,
     MapComponent,
     CreateContactComponent,
-    FormContactComponent
+    ListContactComponent,
+    FormContactComponent,
+    FullContactComponent,
+    PainelSimplesComponent
   ],
   entryComponents: [],
   imports: [

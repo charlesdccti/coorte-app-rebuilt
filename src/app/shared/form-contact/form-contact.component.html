@@ -1,8 +1,8 @@
 <form #f="ngForm" (ngSubmit)="onSubmit()">
 
-  <div class="row margin-top left-align">
+  <!-- <div class="row margin-top left-align">
     <h1>Infomações para Contato:</h1>
-  </div>
+  </div> -->
 
   <div class="row">
     <div class="form-group">
@@ -38,6 +38,7 @@
 </div>
 
 <div class="row margin-top">
-  <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Confirmar</button>
+  <button class="btn btn-primary" style="margin-right: 2%;" type="submit" [disabled]="!f.valid">Confirmar</button>
+  <!-- <button class="btn btn-primary right" routerLink="/listcontact" >Lista de Contados</button> -->
 </div>
 </form>

@@ -22,7 +22,7 @@ export class CreateContactComponent {
     console.log(contact);
     this.contactService.addContact(contact).subscribe(
       () => {
-        this.router.navigateByUrl('/');
+        this.router.navigateByUrl("/listcontact");
       },
       err => {
         console.error(err);
