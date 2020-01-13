@@ -12,12 +12,12 @@ export class ContactService {
   constructor(private http: HttpClient) {}
 
   addContact(contact: Contact): Observable<Contact> {
-    const url = `${environment.apiUrl}/contacts`;
+    const url = `${environment.apiUrl}/contact`;
     return this.http.post<Contact>(url, contact);
   }
 
   getListContact(): Observable<Contact[]> {
-    const url = `${environment.apiUrl}/contacts`;
+    const url = `${environment.apiUrl}/contact`;
     return this.http.get<Contact[]>(url);
   }
 
