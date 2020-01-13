@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-create-contact',
-  templateUrl: './create-contact.component.html',
-  styleUrls: ['./create-contact.component.scss']
+  selector: "app-create-contact",
+  templateUrl: "./create-contact.component.html",
+  styleUrls: ["./create-contact.component.scss"]
 })
 export class CreateContactComponent {
+  erro = null;
 
   constructor(
     private http: HttpClient,
@@ -18,13 +19,14 @@ export class CreateContactComponent {
   ) {}
 
   addContact(contact: Contact) {
-
     console.log(contact);
     this.contactService.addContact(contact).subscribe(
       () => {
         this.router.navigateByUrl("/listcontact");
       },
       err => {
+        this.erro = err;
+        // alert(this.erro.error.message);
         console.error(err);
       }
     );

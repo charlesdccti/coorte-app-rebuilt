@@ -1,6 +1,10 @@
-
 <app-painel-simples col="12" tipo="primary" titulo="Infomações para Contato">
 
-      <app-form-contact (outputcontact)="addContact($event)"></app-form-contact>
+  <div *ngIf="erro!=null" class="msg msg-alert">
+    <h4>Alerta: {{erro.error.message}}</h4>
+    <b>Digite corretamente este campo!</b>
+  </div>
+
+  <app-form-contact (outputcontact)="addContact($event)"></app-form-contact>
 
 </app-painel-simples>
