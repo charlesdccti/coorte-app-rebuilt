@@ -22,7 +22,7 @@
       <label for="email">
         <h5>Email:</h5>
       </label>
-      <input class="form-control" id="email" name="email" #email="ngModel" [(ngModel)]="contact.email" 
+      <input class="form-control" id="email" name="email" #email="ngModel" [(ngModel)]="contact.email"
         [class.is-invalid]="! email.valid && email.touched" type="texto" class="validate" style="width: 60%;" required>
       <div *ngIf="!email.valid && email.touched" class="text-danger">
         O email é obrigatório.

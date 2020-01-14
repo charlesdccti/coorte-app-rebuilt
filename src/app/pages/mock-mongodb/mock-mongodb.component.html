@@ -1,0 +1,70 @@
+<app-painel-simples col="12" tipo="primary" titulo="Adicionar um Mock">
+
+  <div *ngIf="erro!=null" class="msg msg-alert">
+    <h4>Alerta: {{erro.error.message}}</h4>
+    <b>Digite corretamente este campo!</b>
+  </div>
+
+
+  <form #f="ngForm" (ngSubmit)="onSubmit()">
+
+    <div class="row">
+      <div class="form-group">
+        <label for="chave">
+          Chave:
+        </label>
+        <br />
+        <input class="form-control ng-pristine ng-invalid is-invalid ng-touched" id="chave" name="chave"
+          #chave="ngModel" [(ngModel)]="mongo.chave" [class.is-invalid]="!chave.valid && chave.touched" type="texto"
+          required>
+        <div *ngIf="!chave.valid && chave.touched" ngClass="text-danger" ng>
+          O chave é obrigatório.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="valor">
+          Valor:
+        </label>
+        <br />
+        <input class="form-control ng-pristine ng-invalid is-invalid ng-touched" id="valor" name="valor"
+          #valor="ngModel" [(ngModel)]="mongo.valor" [class.is-invalid]="!valor.valid && valor.touched" type="texto"
+
+          style="width: 100%;" required>
+        <div *ngIf="!valor.valid && valor.touched" class="text-danger">
+          O valor é obrigatório.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 2%;">
+      <button class="btn btn-primary" style="margin-right: 2%;" type="submit" [disabled]="!f.valid">Adicionar</button>
+      <!-- <button class="btn btn-primary right" routerLink="/listcontact" >Lista de Contados</button> -->
+    </div>
+  </form>
+
+</app-painel-simples>
+
+<app-painel-simples *ngIf="mongodb!=null" class="Highlight" col="12" tipo="primary" titulo="Lista de Mocks">
+
+    <table class="highlight responsive-table striped">
+      <thead>
+        <tr>
+          <th>Chave</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let mongo of mongodb" class="Highlight">
+          <td>{{mongo.chave}}</td>
+          <td>{{mongo.valor}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+
+    <a class="btn-floating btn-large waves-effect waves-light red right hide-on-med-and-down" (click)="onClickMe()"><i
+        class="material-icons">+</i></a>
+
+</app-painel-simples>
