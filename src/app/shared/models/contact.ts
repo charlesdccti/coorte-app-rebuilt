@@ -4,6 +4,7 @@ export class Contact {
          public email: string = "";
          public phone: string = "";
          public message: string = "";
+         public made: string = "";
          public peso: any = 0.0;
          public altura: any = 0.0;
        }

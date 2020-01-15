@@ -1,3 +1,4 @@
+import { ListUserComponent } from './pages/list-user/list-user.component';
 import { FullMockComponent } from './pages/full-mock/full-mock.component';
 import { MockMongodbComponent } from './pages/mock-mongodb/mock-mongodb.component';
 import { ListContactComponent } from './pages/list-contact/list-contact.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: "health", component: HealthResearchComponent },
   { path: "mockmongo", component: MockMongodbComponent },
   { path: "fullmock", component: FullMockComponent },
+  { path: "listuser", component: ListUserComponent },
   { path: "dashboard", component: DashboardComponent }
 ];
 

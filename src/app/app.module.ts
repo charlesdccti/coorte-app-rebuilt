@@ -1,3 +1,5 @@
+import { ListUserComponent } from './pages/list-user/list-user.component';
+import { DictionaryComponent } from './pages/dictionary/dictionary.component';
 import { FullMockComponent } from './pages/full-mock/full-mock.component';
 import { MockMongodbComponent } from './pages/mock-mongodb/mock-mongodb.component';
 import { HealthResearchComponent } from './pages/health-research/health-research.component';
@@ -61,7 +63,9 @@ import { CreateContactComponent } from './pages/create-contact/create-contact.co
     PainelSimplesComponent,
     HealthResearchComponent,
     MockMongodbComponent,
-    FullMockComponent
+    FullMockComponent,
+    DictionaryComponent,
+    ListUserComponent
   ],
   entryComponents: [],
   imports: [

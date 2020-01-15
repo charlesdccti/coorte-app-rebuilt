@@ -1,0 +1,42 @@
+<app-painel-simples col="12" tipo="primary" titulo="Consultar item no Dicionário">
+
+  <div *ngIf="erro!=null" class="msg msg-alert">
+    <h4>Alerta: {{erro.error.message}}</h4>
+    <b>Digite corretamente este campo!</b>
+  </div>
+
+
+  <form #f="ngForm" (ngSubmit)="onSubmit()">
+
+    <div class="row">
+      <div class="form-group">
+        <label for="chave">
+         <h5>Código:</h5>
+        </label>
+        <input class="form-control ng-pristine ng-invalid is-invalid ng-touched" id="chave" name="chave"
+          #chave="ngModel" [(ngModel)]="mongo.chave" [class.is-invalid]="!chave.valid && chave.touched" type="texto"
+          required>
+        <div *ngIf="!chave.valid && chave.touched" ngClass="text-danger" ng>
+          O chave é obrigatório.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 2%;">
+      <button class="btn btn-primary" style="margin-right: 2%;" type="submit" [disabled]="!f.valid">Adicionar</button>
+      <!-- <button class="btn btn-primary right" routerLink="/listcontact" >Lista de Contados</button> -->
+    </div>
+  </form>
+
+</app-painel-simples>
+
+
+<app-painel-simples *ngIf="resultado!=null" col="12" tipo="primary" titulo="Resultado">
+
+  <div *ngIf="resultado!=null" class="msg msg-alert">
+    <h4>Cidade: {{resultado}}</h4>
+  </div>
+
+
+</app-painel-simples>

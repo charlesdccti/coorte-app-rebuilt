@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class CreateContactComponent {
   erro = null;
+  resultadoIMC: string = null;
+  user: Contact;
 
   constructor(
     private http: HttpClient,
@@ -19,11 +21,18 @@ export class CreateContactComponent {
   ) {}
 
   addContact(contact: Contact) {
-    console.log(contact);
-    this.contactService.addContact(contact).subscribe(
-      () => {
-        this.router.navigateByUrl("/listcontact");
-      },
+    // console.log(contact);
+    this.user = contact;
+    this.contactService.getTextMsgIMC(contact).subscribe(
+      res => this.resultadoIMC = res
+    );
+    console.log(this.resultadoIMC);
+
+
+    this.contactService.addContactUser(contact).subscribe(
+      // () => { this.router.navigateByUrl("/listcontact");}
+      dados => this.user = dados
+      ,
       err => {
         this.erro = err;
         // alert(this.erro.error.message);

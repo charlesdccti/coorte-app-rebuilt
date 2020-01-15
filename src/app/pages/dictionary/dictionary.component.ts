@@ -1,18 +1,16 @@
-import { Mongo } from './../../shared/models/mongo';
-import { environment } from './../../../environments/environment';
-import { Router } from '@angular/router';
-import { ContactService } from 'src/app/services/contact.service';
 import { HttpClient } from '@angular/common/http';
+import { Mongo } from './../../shared/models/mongo';
 import { Observable } from 'rxjs';
-import { Contact } from 'src/app/shared/models/contact';
 import { Component, OnInit } from '@angular/core';
+import { ContactService } from 'src/app/services/contact.service';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: "app-mock-mongodb",
-  templateUrl: "./mock-mongodb.component.html",
-  styleUrls: ["./mock-mongodb.component.scss"]
+  selector: "app-dictionary",
+  templateUrl: "./dictionary.component.html",
+  styleUrls: ["./dictionary.component.scss"]
 })
-export class MockMongodbComponent {
+export class DictionaryComponent {
   erro = null;
   obsTextMsg: Observable<string>;
 
@@ -21,6 +19,8 @@ export class MockMongodbComponent {
   mongo: Mongo = <Mongo>{};
   mongoInscricao: any;
   mongodb = null;
+  resultado;
+  cidadeList: Mongo[];
 
   constructor(
     private http: HttpClient,
@@ -29,18 +29,24 @@ export class MockMongodbComponent {
   ) {}
 
   onSubmit() {
-    this.addMongo(this.mongo);
+    // this.addMongo(this.mongo);
+    this.loadCidades();
+    this.getValorByChave(this.mongo.chave);
+  }
 
-    //this.getValorByChave(this.chave);
+  loadCidades() {
+    this.mongoInscricao = this.contactService.loadCidades().subscribe(
+      dados => (this.cidadeList = dados),
+      erro => console.log(erro)
+    );
   }
 
   getValorByChave(chave: Number) {
     // test
     this.contactService
       .getValorByChaveDictionary(chave)
-      .subscribe(retorno => (this.valor = retorno));
+      .subscribe(retorno => (this.resultado = retorno));
   }
-
 
   addMongo(mongo: Mongo) {
     console.log(mongo);
@@ -63,9 +69,9 @@ export class MockMongodbComponent {
   }
 
   onClickMe() {
-        this.mongoInscricao = this.contactService.getListMongoDB().subscribe(
-          dados => (this.mongodb = dados),
-          erro => console.log(erro)
-        );
+    this.mongoInscricao = this.contactService.getListMongoDB().subscribe(
+      dados => (this.mongodb = dados),
+      erro => console.log(erro)
+    );
   }
 }

@@ -1,0 +1,28 @@
+<app-painel-simples class="Highlight" col="12" tipo="primary" titulo="Lista de Usuarios">
+
+  <table class="highlight responsive-table striped">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Nome</th>
+        <th>made</th>
+        <th>peso</th>
+        <th>altura</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users" class="Highlight">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.made}}</td>
+        <td>{{user.peso}}</td>
+        <td>{{user.altura}}
+        <td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a class="btn-floating btn-large waves-effect waves-light red right hide-on-med-and-down" routerLink="/fullcontact"><i
+      class="material-icons">+</i></a>
+
+</app-painel-simples>
